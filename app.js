@@ -1,4 +1,5 @@
 // Import required modules
+require('dotenv').config();
 const fs = require('fs');
 const Web3 = require('web3');
 const express = require('express');
@@ -62,7 +63,7 @@ register.registerMetric(statusMetric);
 
 // Set up Express application
 const app = express();
-const port = config.port; // Port from config
+const port = process.env.PORT || 8080; // Port from .env or default to 8080
 
 // Function to fetch automation data from Chainlink API
 async function fetchAutomationData(automation) {

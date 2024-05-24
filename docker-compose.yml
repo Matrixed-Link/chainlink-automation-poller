@@ -7,4 +7,3 @@ services:
       - .:/usr/src/app
     ports:
       - "${PORT:-8080}:${PORT:-8080}"
-    entrypoint: ["sh", "-c", "./set_env.sh && node --no-deprecation app.js"]

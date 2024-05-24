@@ -32,6 +32,11 @@ This application monitors Chainlink automation balances on Chainlink Automation 
 
 4. Update `config.json` with your specific automation IDs, network details, and registry/registrar addresses.
 
+5. Copy the example .env file and update it with your chosen port:
+    ```sh
+    cp .env.example .env
+    ```
+
 ## Running the Application
 
 ### Using Node.js
@@ -41,7 +46,7 @@ Start the application using Node.js:
 npm run start
 ```
 
-The application will start a server on the port specified in `config.json` (default is 8080). Metrics will be available at `http://localhost:8080/metrics`.
+The application will start a server on the port specified in `.env` (default is 8080). Metrics will be available at `http://localhost:8080/metrics`.
 
 ### Using Docker
 
@@ -57,7 +62,7 @@ Build and run the application using Docker and Docker Compose:
     docker compose up
     ```
 
-The application will start a server on the port specified in `config.json` (default is 8080). Metrics will be available at `http://localhost:8080/metrics`.
+The application will start a server on the port specified in `.env` (default is 8080). Metrics will be available at `http://localhost:8080/metrics`.
 
 ## Metrics
 
