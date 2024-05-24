@@ -8,6 +8,9 @@ This application monitors Chainlink automation on Chainlink enabled networks, fe
 - Node.js (version 20.x or later)
 - npm (version 10.x or later)
 - Prometheus
+- jq
+- Docker
+- Docker Compose
 
 ## Installation
 
@@ -31,10 +34,28 @@ This application monitors Chainlink automation on Chainlink enabled networks, fe
 
 ## Running the Application
 
+### Using Node.js
+
 Start the application using Node.js:
 ```sh
 npm run start
 ```
+
+The application will start a server on the port specified in `config.json` (default is 8080). Metrics will be available at `http://localhost:8080/metrics`.
+
+### Using Docker
+
+Build and run the application using Docker and Docker Compose:
+
+1. Build the Docker image:
+    ```sh
+    docker-compose build
+    ```
+
+2. Start the application:
+    ```sh
+    docker-compose up
+    ```
 
 The application will start a server on the port specified in `config.json` (default is 8080). Metrics will be available at `http://localhost:8080/metrics`.
 
