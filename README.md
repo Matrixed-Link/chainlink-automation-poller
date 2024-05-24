@@ -16,7 +16,7 @@ This application monitors Chainlink automation balances on Chainlink Automation 
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/MatrixedLink/chainlink-automation-poller.git
+    git clone https://github.com/Matrixed-Link/chainlink-automation-poller.git
     cd chainlink-automation-poller
     ```
 
