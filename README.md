@@ -1,7 +1,7 @@
 
 # Chainlink Automation Poller
 
-This application monitors Chainlink automation on Chainlink enabled networks, fetching data and exposing it as Prometheus metrics.
+This application monitors Chainlink automation balances on Chainlink Automation enabled networks, fetching data and exposing it as Prometheus metrics.
 
 ## Prerequisites
 
@@ -49,12 +49,12 @@ Build and run the application using Docker and Docker Compose:
 
 1. Build the Docker image:
     ```sh
-    docker-compose build
+    docker compose build
     ```
 
 2. Start the application:
     ```sh
-    docker-compose up
+    docker compose up
     ```
 
 The application will start a server on the port specified in `config.json` (default is 8080). Metrics will be available at `http://localhost:8080/metrics`.
