@@ -1,0 +1,19 @@
+{
+  "name": "chainlink-automation-poller",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "node --no-deprecation app.js"
+  },
+  "keywords": [],
+  "author": "Matrixed.Link BV",
+  "license": "MIT",
+  "description": "",
+  "dependencies": {
+    "express": "^4.19.2",
+    "fetch": "^1.1.0",
+    "prom-client": "^15.1.2",
+    "web3": "^4.9.0",
+    "winston": "^3.13.0"
+  }
+}

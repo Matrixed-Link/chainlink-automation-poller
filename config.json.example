@@ -1,0 +1,17 @@
+{
+    "automations": [
+        {
+            "AUTOMATION_ID": "YOUR_ETHEREUM_AUTOMATION_ID",
+            "NETWORK": "ethereum-mainnet",
+            "REGISTRY_ADDRESS": "YOUR_ETHEREUM_REGISTRY_ADDRESS",
+            "REGISTRAR_ADDRESS": "YOUR_ETHEREUM_REGISTRAR_ADDRESS"
+        },
+        {
+            "AUTOMATION_ID": "YOUR_POLYGON_AUTOMATION_ID",
+            "NETWORK": "polygon-mainnet",
+            "REGISTRY_ADDRESS": "YOUR_POLYGON_REGISTRY_ADDRESS",
+            "REGISTRAR_ADDRESS": "YOUR_POLYGON_REGISTRAR_ADDRESS"
+        }
+    ],
+    "port": 8080
+}
